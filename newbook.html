@@ -77,7 +77,7 @@
         <!-- /Book Title -->
 
         <div class="row">
-            <div class="mb-3">
+            <div class="mb-3 col-12 col-lg-4">
                 <label for="bookGenreSelect" class="form-label">Genere</label>
                 <select class="form-select" aria-label="Small select example" name="bookGenreSelect"
                     id="bookGenreSelect">
@@ -97,8 +97,50 @@
                     <option value=""> UMORISTICO</option>
                 </select>
             </div>
-
+            <!-- /book genre -->
+            <div class="mb-3 col-12 col-lg-4">
+                <label for="bookPublishYear" class="form-label">Anno di Pubblicazione</label>
+                <input type="text" class="form-control" name="bookPublishYear" id="bookPublishYear"
+                    aria-describedby="helpId" placeholder="Inserisci l'anno" />
+            </div>
+            <!-- /publish date -->
+            <div class="mb-3 col-12 col-lg-4">
+                <label for="ISBNcode" class="form-label">ISBN#</label>
+                <input type="text" class="form-control" name="ISBNcode" id="ISBNcode" aria-describedby="helpId"
+                    placeholder="Inserisci il codice ISBN#" />
+            </div>
+            <!-- /ISBN# -->
         </div>
+        <!-- /book infos -->
+
+        <hr>
+
+        <div class="mb-3">
+            <label for="userNotes" class="form-label">Note</label>
+            <textarea type="text" class="form-control" name="userNotes" id="userNotes" aria-describedby="helpId"
+                rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+        </div>
+        <!-- /notes -->
+
+        <div class="mb-3">
+            <!-- <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Disponibile anche in digitale
+                </label>
+            </div> -->
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Disponibile anche in digitale</label>
+            </div>
+        </div>
+        <!-- /online check -->
+        <button type="button" class="btn btn-primary mb-4">
+            Aggiungi Libro
+        </button>
+        <!-- /confirm inputs button -->
+
 
 
     </main>
