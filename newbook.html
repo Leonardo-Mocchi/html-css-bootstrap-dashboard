@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="./assets/img/duck.png" height="60" alt="">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-lg-between collapse" id="navbarSupportedContent">
+                <ul class="nav flex-column align-items-end flex-lg-row text-white-50">
+                    <li class="nav-item px-2 py-2 text-light ">
+                        Catalogo Libri
+                    </li>
+                    <li class="px-2 py-2 nav-item">
+                        Anagrafica Utenti
+                    </li>
+                    <li class="px-2 py-2 nav-item">
+                        Storico Prestiti
+                    </li>
+                    <li class="px-2 py-2 nav-item">
+                        Help
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- / navbar-->
+
+    <main class="container">
+        <div class="my-3">
+            <h1>Nuovo Libro</h1>
+        </div>
+
+        <div class="row">
+            <div class=" col-6 mb-3">
+                <label for="authorName" class="form-label">Nome Autore</label>
+                <input type="text" class="form-control" name="authorName" id="authorName" aria-describedby="helpId"
+                    placeholder="Inserisci il nome dell'autore" />
+            </div>
+
+            <!-- /name input -->
+            <div class="col-6 mb-3">
+                <label for="authorSurname" class="form-label">Cognome Autore</label>
+                <input type="text" class="form-control" name="authorSurname" id="authorSurname"
+                    aria-describedby="helpId" placeholder="Inserisci il cognome dell'autore" />
+            </div>
+            <!-- /surname input -->
+        </div>
+        <!-- /author name&surname section -->
+        <div class="mb-3">
+            <label for="bookTitle" class="form-label">Name</label>
+            <input type="text" class="form-control" name="bookTitle" id="bookTitle" aria-describedby="helpId"
+                placeholder="Inserisci il titolo del libro" />
+            <small id="helpId" class="form-text text-muted">Titolo versione italiana</small>
+        </div>
+        <!-- /Book Title -->
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="bookGenreSelect" class="form-label">Genere</label>
+                <select class="form-select" aria-label="Small select example" name="bookGenreSelect"
+                    id="bookGenreSelect">
+                    <option selected>Scegli il genere</option>
+                    <option value="">BIOGRAFIA E AUTOBIOGRAFIA</option>
+                    <option value="">ROMANZO STORICO</option>
+                    <option value=""> GIALLO E I SUOI FRATELLI (NOIR E HARD BOILED)</option>
+                    <option value=""> THRILLER</option>
+                    <option value=""> AVVENTURA E AZIONE</option>
+                    <option value=""> FANTASCIENZA</option>
+                    <option value=""> DISTOPIA</option>
+                    <option value=""> FANTASY</option>
+                    <option value=""> HORROR</option>
+                    <option value=""> YOUNG ADULT</option>
+                    <option value=""> ROMANZO DI FORMAZIONE</option>
+                    <option value=""> ROSA O ROMANCE</option>
+                    <option value=""> UMORISTICO</option>
+                </select>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- Bootstrap JavaScript Library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
